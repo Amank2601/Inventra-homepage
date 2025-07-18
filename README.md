@@ -15,7 +15,6 @@ Inventra is a clean, responsive, and modern homepage UI for a smart inventory ma
 ## 🚀 Live Preview
 
 > [🔗 View Demo on GitHub Pages](https://amank2601.github.io/Inventra-homepage/)  
-> *(Update the link after deploying)*
 
 ## 🛠️ Tech Used
 
