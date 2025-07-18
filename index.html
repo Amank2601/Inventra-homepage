@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inventra - Inventory Simplified</title>
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+  .spin-on-parent-hover {
+    transition: transform 0.6s ease;
+  }
+
+  .group:hover .spin-on-parent-hover {
+    transform: rotateY(360deg);
+  }
+</style>
+
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-blue-600">Inventra</h1>
+
+    <!-- Desktop Menu -->
+    <nav class="space-x-6 text-sm font-medium hidden md:flex md:items-center">
+      <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
+      <a href="#features" class="text-gray-600 hover:text-blue-600">Features</a>
+      <a href="#offers" class="text-gray-600 hover:text-blue-600">Offers</a>
+      <a href="#mission" class="text-gray-600 hover:text-blue-600">About</a>
+      <a href="login.html" class="text-gray-600 hover:text-blue-600">Login</a>
+      <a href="subsription.html">
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Register</button>
+      </a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-toggle" class="md:hidden text-blue-600 text-2xl focus:outline-none">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu (Dropdown) -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-3 text-sm font-medium bg-white w-screen absolute -z-1">
+    <a href="#" class="block text-gray-600 hover:text-blue-600">Home</a>
+    <a href="#features" class="block text-gray-600 hover:text-blue-600">Features</a>
+    <a href="#offers" class="block text-gray-600 hover:text-blue-600">Offers</a>
+    <a href="#mission" class="block text-gray-600 hover:text-blue-600">About</a>
+    <a href="login.html" class="block text-gray-600 hover:text-blue-600">Login</a>
+    <a href="subsription.html">
+      <button class="w-full bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Register</button>
+    </a>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <!-- Hero Section with Background Image + Gradient -->
+<section class="relative h-[90vh] flex items-center justify-center text-center overflow-hidden">
+  <img 
+    src="images/warehouse.jpg" 
+    alt="Inventory warehouse background" 
+    class="absolute inset-0 w-full h-full object-cover z-0"
+  />
+  <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/20 z-10"></div>
+  <div class="relative z-20 px-6 max-w-3xl text-white">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Simplify Your Inventory. Empower Your Business.</h2>
+    <p class="text-lg text-blue-100 mb-8">
+      Inventra is your smart inventory partner — track, manage, and grow effortlessly with our intuitive system.
+    </p>
+    <a href="#" class="bg-white text-blue-700 px-6 py-3 rounded-lg shadow hover:bg-gray-300 transition text-lg font-semibold">Get Started Free</a>
+  </div>
+</section>
+
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-12 text-gray-800">Powerful Features</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2 text-blue-600">Real-Time Tracking</h4>
+          <p class="text-gray-600">Monitor your stock levels and updates instantly across all devices.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2 text-blue-600">Smart Restocking</h4>
+          <p class="text-gray-600">Get low-stock alerts and automate restock orders intelligently.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2 text-blue-600">Analytics & Insights</h4>
+          <p class="text-gray-600">Track performance trends and make informed decisions with ease.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Mission Section -->
+<section id="mission" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 md:px-10">
+    <div class="text-center mb-12">
+      <h3 class="text-3xl font-bold text-gray-800 mb-4">Our Mission</h3>
+      <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+        At <span class="font-semibold text-blue-600">Inventra</span>, our mission is to empower businesses of all sizes with powerful, intuitive, and affordable inventory management tools that simplify operations and enhance decision-making.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div class="group p-6 rounded-xl shadow bg-blue-50 hover:shadow-md hover:scale-105 transition">
+        <img src="images/efficiency.png" alt="Efficiency" class="w-24 h-24 mx-auto mb-4 spin-on-parent-hover">
+        <h4 class="text-xl font-semibold mb-2 text-blue-700">Efficiency</h4>
+        <p class="text-gray-600">We help you reduce manual work and boost your business performance through automation.</p>
+      </div>
+      <div class="group p-6 rounded-xl shadow bg-blue-50 hover:shadow-md hover:scale-105 transition">
+        <img src="images/accessible.png" alt="Accessibility" class="w-24 h-24 mx-auto mb-4 spin-on-parent-hover">
+        <h4 class="text-xl font-semibold mb-2 text-blue-700">Accessibility</h4>
+        <p class="text-gray-600">Inventra is built for everyone — from retail shops to wholesalers — easy to use and accessible anywhere.</p>
+      </div>
+      <div class="group p-6 rounded-xl shadow bg-blue-50 hover:shadow-md hover:scale-105 transition">
+        <img src="images/growth.png" alt="Growth" class="w-24 h-24 mx-auto mb-4 spin-on-parent-hover">
+        <h4 class="text-xl font-semibold mb-2 text-blue-700">Growth</h4>
+        <p class="text-gray-600">We support your journey by offering tools that scale with your growing inventory and business goals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What We Offer Section -->
+<section id="offers" class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6 md:px-10">
+    <div class="text-center mb-12">
+      <h3 class="text-3xl font-bold text-gray-800 mb-4">What We Offer</h3>
+      <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+        A suite of intelligent features to streamline your inventory, sales, and stock management process.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Dynamic Payment Options -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+        <div class="text-4xl mb-4">
+          <i class="fa-solid fa-credit-card fa-flip-horizontal fa-bounce" style="color: #74C0FC;"></i>
+        </div>
+        <h4 class="text-xl font-semibold mb-2 text-blue-600">Dynamic Payment Options</h4>
+        <p class="text-gray-600">Multiple payment methods with real-time tracking, billing, and custom invoices.</p>
+      </div>
+
+      <!-- Low Stock Alerts -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+        <div class="text-4xl mb-4">
+          <i class="fa-solid fa-circle-exclamation fa-bounce" style="color: #74C0FC;"></i>
+        </div>
+        <h4 class="text-xl font-semibold mb-2 text-blue-600">Low Stock Alerts</h4>
+        <p class="text-gray-600">Get instant alerts when your items fall below minimum levels. Never run out of stock again.</p>
+      </div>
+
+      <!-- Multi-User Support -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+        <div class="text-4xl mb-4">
+          <i class="fa-solid fa-users fa-bounce" style="color: #74C0FC;"></i>
+        </div>
+        <h4 class="text-xl font-semibold mb-2 text-blue-600">Multi-User Support</h4>
+        <p class="text-gray-600">Manage inventory collaboratively with role-based access for team members.</p>
+      </div>
+
+      <!-- Analytics Dashboard -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+        <div class="text-4xl mb-4">
+          <i class="fa-solid fa-chart-simple fa-bounce" style="color: #74C0FC;"></i>
+        </div>
+        <h4 class="text-xl font-semibold mb-2 text-blue-600">Analytics Dashboard</h4>
+        <p class="text-gray-600">Visualize trends, turnover rates, and real-time performance metrics easily.</p>
+      </div>
+
+      <!-- Mobile Access -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+        <div class="text-4xl mb-4">
+          <i class="fa-solid fa-mobile fa-bounce" style="color: #74C0FC;"></i>
+        </div>
+        <h4 class="text-xl font-semibold mb-2 text-blue-600">Mobile Access</h4>
+        <p class="text-gray-600">Update, view, and manage inventory from your smartphone or tablet on the go.</p>
+      </div>
+
+      <!-- Seamless Integration -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+        <div class="text-4xl mb-4">
+          <i class="fa-solid fa-tower-broadcast fa-bounce" style="color: #74C0FC;"></i>
+        </div>
+        <h4 class="text-xl font-semibold mb-2 text-blue-600">Seamless Integration</h4>
+        <p class="text-gray-600">Easily connect Inventra with third-party tools like POS, eCommerce, and ERP platforms.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-white border-t py-8">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
+      <p>© 2025 Inventra. All rights reserved.</p>
+      <div class="space-x-4 mt-4 md:mt-0">
+        <a href="#" class="hover:text-blue-600">Privacy</a>
+        <a href="#" class="hover:text-blue-600">Terms</a>
+        <a href="#" class="hover:text-blue-600">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("mobile-menu-toggle");
+    const menu = document.getElementById("mobile-menu");
+
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  });
+</script>
+</body>
+</html>
